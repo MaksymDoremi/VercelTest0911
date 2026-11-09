@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4eee4" />
+    <meta
+      name="description"
+      content="A cozy autumn clicker with little Halloween achievements to unlock."
+    />
+    <title>Brew &amp; Boo — Cozy Clicker</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Brew and Boo home">
+          <span class="brand-mark" aria-hidden="true"><span class="skull-face skull-face-brand"></span></span>
+          <span>brew <span class="brand-amp">&amp;</span> boo</span>
+        </a>
+        <p class="season-label"><span aria-hidden="true"></span> A little autumn ritual</p>
+      </header>
+
+      <main id="top">
+        <section class="clicker-card" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow">The haunted bean · est. spooky season</p>
+            <h1 id="page-title">A cozy click.<br /><span>A tiny boo.</span></h1>
+            <p class="intro-copy">
+              Take a little break, warm up your clicking finger, and see how many
+              happy hauntings you can collect.
+            </p>
+            <div class="brew-note">
+              <span class="brew-note-mark" aria-hidden="true"></span>
+              <span>Best enjoyed with something warm in your mug.</span>
+            </div>
+          </div>
+
+          <div class="counter-panel">
+            <div class="counter-label"><span></span> Your cozy click count</div>
+            <p class="counter-number" id="counter" aria-live="polite" aria-atomic="true">0</p>
+            <p class="counter-caption" id="counter-caption">Every little click counts.</p>
+            <button class="click-button" id="click-button" type="button">
+              <span class="button-sparkle" aria-hidden="true"></span>
+              <span>Make a little magic</span>
+            </button>
+            <div class="progress-block">
+              <div class="progress-copy">
+                <span>Next little win</span>
+                <span id="progress-label">10 clicks</span>
+              </div>
+              <div
+                class="progress-track"
+                id="progress-track"
+                role="progressbar"
+                aria-label="Progress to next achievement"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="progress-fill" id="progress-fill"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="achievements-section" aria-labelledby="achievements-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Little wins from the other side</p>
+              <h2 id="achievements-title">The bone-afide club</h2>
+            </div>
+            <p class="achievement-hint">Keep clicking to wake the skeletons.</p>
+          </div>
+          <ol class="achievement-grid" id="achievement-grid">
+            <li class="achievement-card" data-threshold="10">
+              <span class="skeleton-badge" aria-hidden="true"><span class="skull-face"></span></span>
+              <div class="achievement-detail">
+                <div class="achievement-title-row">
+                  <h3>First stir</h3>
+                  <span class="achievement-status">Locked</span>
+                </div>
+                <p>10 clicks · a tiny bit of magic</p>
+              </div>
+            </li>
+            <li class="achievement-card" data-threshold="100">
+              <span class="skeleton-badge" aria-hidden="true"><span class="skull-face"></span></span>
+              <div class="achievement-detail">
+                <div class="achievement-title-row">
+                  <h3>Bean there</h3>
+                  <span class="achievement-status">Locked</span>
+                </div>
+                <p>100 clicks · warming up nicely</p>
+              </div>
+            </li>
+            <li class="achievement-card" data-threshold="200">
+              <span class="skeleton-badge" aria-hidden="true"><span class="skull-face"></span></span>
+              <div class="achievement-detail">
+                <div class="achievement-title-row">
+                  <h3>Happy haunt</h3>
+                  <span class="achievement-status">Locked</span>
+                </div>
+                <p>200 clicks · the spirits approve</p>
+              </div>
+            </li>
+            <li class="achievement-card" data-threshold="500">
+              <span class="skeleton-badge" aria-hidden="true"><span class="skull-face"></span></span>
+              <div class="achievement-detail">
+                <div class="achievement-title-row">
+                  <h3>Spooktacular</h3>
+                  <span class="achievement-status">Locked</span>
+                </div>
+                <p>500 clicks · frightfully good work</p>
+              </div>
+            </li>
+            <li class="achievement-card" data-threshold="1000">
+              <span class="skeleton-badge" aria-hidden="true"><span class="skull-face"></span></span>
+              <div class="achievement-detail">
+                <div class="achievement-title-row">
+                  <h3>Legend of the bean</h3>
+                  <span class="achievement-status">Locked</span>
+                </div>
+                <p>1,000 clicks · a bone-afide legend</p>
+              </div>
+            </li>
+          </ol>
+          <p class="sr-only" id="achievement-announcement" aria-live="polite" aria-atomic="true"></p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Made for cozy clicks and curious little monsters.</span>
+        <span class="footer-star" aria-hidden="true"></span>
+      </footer>
+    </div>
+  </body>
+</html>
